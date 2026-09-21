@@ -1,0 +1,21 @@
+devices:
+  - hostname: ORL-CORE-01
+    vendor: cisco
+    platform: ios
+    role: core
+    site: Orlando
+    management_ip: 10.10.10.10
+
+  - hostname: ORL-DIST-01
+    vendor: cisco
+    platform: ios
+    role: distribution
+    site: Orlando
+    management_ip: 10.10.10.20
+
+  - hostname: ORL-EDGE-01
+    vendor: juniper
+    platform: junos
+    role: edge
+    site: Orlando
+    management_ip: 10.10.10.30
