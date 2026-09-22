@@ -1,0 +1,23 @@
+rules:
+
+  management_access:
+    description: "Require secure management access."
+    required:
+      - "ssh"
+    forbidden:
+      - "telnet"
+
+  authentication:
+    description: "Require centralized authentication configuration."
+    required:
+      - "aaa"
+
+  logging:
+    description: "Require centralized logging."
+    required:
+      - "logging"
+
+  network_services:
+    description: "Prevent unnecessary legacy services."
+    forbidden:
+      - "ip http server"
